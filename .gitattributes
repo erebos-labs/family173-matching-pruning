@@ -2,3 +2,4 @@
 LICENSE -text -whitespace
 provenance/upstream-pinned/* -text -whitespace
 combinatorial-pruning/sources/* -text -whitespace
+residual-cover/sources/* -text -whitespace

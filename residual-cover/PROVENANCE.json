@@ -1,0 +1,52 @@
+{
+  "approved_candidate_zip_sha256": "f8ebee1f89d84b94fb93b7e06b31d0b7f651ba313c30b86535262f4f8d1fa98c",
+  "base_commit": "0e54afc279700434df4a01b61ca97cfaf19af53b",
+  "changes": "diagnostic explicit checks; root-only manifest exclusion; optimized runner; selected public documentation, regressions and independent oracle",
+  "edition": "public v1.2.0",
+  "licence": "Apache-2.0; upstream unchanged",
+  "novelty": "unestablished; inequality already inherited",
+  "original_archive": {
+    "bytes": 111923,
+    "sha256": "3812f68f1330b0a1e5d08ea325df2b75107c9f09dc5acf98c2dff0853170e4de"
+  },
+  "original_authoring_environment": {
+    "dependency_policy": "Python standard library only",
+    "execution_scope": "local Linux container; no Atlas/macOS/Lean execution",
+    "implementation": "CPython",
+    "machine": "x86_64",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "python_version": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "session_date": "2026-10-14"
+  },
+  "preparation_environment": {
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "standard_library_only": true
+  },
+  "primary_source": {
+    "bytes": 16261,
+    "commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "current_head_claim": "None in this continuation.",
+    "git_blob_sha1": "4fe3b01285d67d6fb5a5e7a8798a3c12f432ff76",
+    "path": "preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/02-pruning.tex",
+    "repository": "openai/math",
+    "retrieval": "Unchanged source inside the supplied prior ZIP; hash verified in this turn.",
+    "sha256": "ba7ce7351b1edf1429c8e01533be6172e9e89ac6fca770c2ef5f1c59e918fdb0",
+    "url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/02-pruning.tex"
+  },
+  "prior_archive": {
+    "bytes": 224206,
+    "filename": "family173-combinatorial-pruning-v1.0.zip",
+    "preservation": "Original bytes preserved locally, omitted from selected public package; earlier public addendum remains byte-identical.",
+    "sha256": "62f2fb43b68e8076b9b491db03c0c7c1db84a8b98c1c296fa6ea2e079cbf9b3b"
+  },
+  "private_transfer_records_distributed": false,
+  "public_version": "1.2.0",
+  "release": "https://github.com/erebos-labs/family173-matching-pruning/releases/tag/v1.2.0",
+  "review": {
+    "human_referee_review": false,
+    "lean_verified": false,
+    "ordinary_proof": "separate agent review and independent audit accepted"
+  },
+  "source_correspondence": "Byte-identical to prior independent retrieval of exact pin; no current HEAD claim"
+}

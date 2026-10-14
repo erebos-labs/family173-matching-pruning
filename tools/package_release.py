@@ -3,7 +3,7 @@
 import argparse,hashlib,json,subprocess,sys,zipfile
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-VERSION='1.1.0'
+VERSION='1.2.0'
 NAME='family173-matching-pruning-v'+VERSION
 ap=argparse.ArgumentParser(description=__doc__)
 ap.add_argument('--output',type=Path,required=True)
@@ -33,8 +33,11 @@ provenance={'schema':'family173.release-provenance.v1','version':VERSION,
   'commit':commit,'package':{'name':targets[0].name,'bytes':targets[0].stat().st_size,'sha256':digest},
   'input_archive_sha256':'b2434d3008af12f7c7f4b0e495b8439cf25f36461987773752e6d79fc7118b83',
   'partial_input_archive_sha256':'62f2fb43b68e8076b9b491db03c0c7c1db84a8b98c1c296fa6ea2e079cbf9b3b',
+  'residual_input_archive_sha256':'3812f68f1330b0a1e5d08ea325df2b75107c9f09dc5acf98c2dff0853170e4de',
+  'publication_status':'public edition prepared for approved v1.2.0 publication',
+  'baseline_commit':'0e54afc279700434df4a01b61ca97cfaf19af53b',
   'upstream_commit':'1581d4cbdd69a0faf34b2089614fe2a814316a6a',
-  'scope':'Capacity corollary plus PARTIAL exposure-transfer/mandatory-core addendum; full rank-free residual unresolved; novelty unestablished; no Lean or full Seymour endorsement.'}
+  'scope':'Previously established capacity corollary plus a constructive rank-free residual-cover proof completing the combinatorial accounting; historical partial addendum preserved; novelty unestablished; no Lean or full Seymour endorsement.'}
 targets[2].write_text(json.dumps(provenance,indent=2,sort_keys=True)+'\n')
 sums={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in (targets[0],targets[2])}
 targets[1].write_text(''.join(sums[n]+'  '+n+'\n' for n in sorted(sums)))

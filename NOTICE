@@ -34,3 +34,10 @@ checked counterexample to a failed shortcut. Its full rank-free residual remains
 unresolved. New public material uses Apache-2.0; copied upstream files retain
 their unchanged licence and attribution. See combinatorial-pruning/NOTICE.md.
 The original v1.0.1 proof, commit, tag, release and assets remain unchanged.
+
+Additive v1.2.0: residual-cover supplies a constructive shared-order
+selector proof completing the combinatorial capacity accounting. Its inequality
+is inherited, novelty is unestablished, and no Lean verification is claimed.
+New material is Apache-2.0 and AI-assisted; upstream bytes/notices remain intact.
+Historical v1.1.0 partial material is preserved unchanged. This is the selected
+public edition. See residual-cover/NOTICE.md and residual-cover/audit/REVIEW.md.

@@ -1,0 +1,75 @@
+{
+  "accounting": {
+    "certificates": {
+      "A": {
+        "cover": [],
+        "matching": []
+      },
+      "B": {
+        "cover": [],
+        "matching": []
+      },
+      "B_RT": {
+        "cover": [],
+        "matching": []
+      },
+      "B_alpha": {
+        "cover": [],
+        "matching": []
+      },
+      "Gamma": {
+        "cover": [],
+        "matching": []
+      },
+      "L": {
+        "cover": [],
+        "matching": []
+      },
+      "N": {
+        "cover": [],
+        "matching": []
+      }
+    },
+    "extension": [],
+    "extension_paths": [],
+    "extracted": []
+  },
+  "conversion": {
+    "KN": [],
+    "branch": "all-Z",
+    "selectors_C": [],
+    "selectors_Z": []
+  },
+  "instance": {
+    "C": [
+      [
+        1,
+        1
+      ]
+    ],
+    "R": [
+      [
+        1,
+        1
+      ]
+    ],
+    "arrows": [
+      [
+        0,
+        0
+      ]
+    ],
+    "n": 2
+  },
+  "label": "no-conflicts",
+  "request": {
+    "KB": [],
+    "W": [],
+    "alpha": [],
+    "order": [
+      0,
+      1
+    ]
+  },
+  "schema": 1
+}

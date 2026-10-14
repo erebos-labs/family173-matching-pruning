@@ -1,6 +1,6 @@
 # Family 173: matching-capacity pruning
 
-Erebos Labs. Capacity corollary **v1.0.1**, with partial combinatorial addendum **v1.1.0**.
+Erebos Labs. Capacity corollary **v1.0.1**, with historical partial addendum **v1.1.0** and complete rank-free addendum **v1.2.0**.
 
 For the exact conflict and coverage definitions in [the note](MATHEMATICAL_NOTE.md),
 let Z,H be the original corner sets, Gamma the augmented bipartite graph, and
@@ -34,7 +34,7 @@ python3 -O tests/run_tests.py
 python3 independent/checks.py
 ```
 
-The first command checks payload integrity, the complete finite suite, isolated
+The first command checks payload integrity, the original capacity finite suite, isolated
 verifier execution and constructor CLI reproduction. The optimized command
 runs the checks with assertions disabled. The last command is the audit-owned
 minimum-cover oracle and additional corruption controls.
@@ -110,7 +110,8 @@ unexpected changes.
 
 [combinatorial-pruning/](combinatorial-pruning/) adds independently audited
 rank-free exposure transfer, mandatory-core separation and a checked failed-
-shortcut counterexample. The complete rank-free residual proof remains unresolved.
+shortcut counterexample. The complete rank-free residual proof was unresolved in that edition;
+[residual-cover/](residual-cover/) now supplies it in v1.2.0.
 The original capacity theorem and its v1.0.1 rank proof above are unchanged.
 
 The addendum includes hardened certificate decoding, 28 targeted rejection
@@ -120,3 +121,20 @@ finite checks. Novelty is unestablished and no Lean claim is made. See its
 [limitations](combinatorial-pruning/LIMITATIONS.md). The
 [v1.1.0 release](https://github.com/erebos-labs/family173-matching-pruning/releases/tag/v1.1.0)
 is additive; the earlier v1.0.1 tag, release and assets remain available.
+
+## Constructive residual cover addendum — v1.2.0
+
+[residual-cover/](residual-cover/) supplies the independently audited shared-order
+matching-selector proof of the residual-cover statement. Together with inherited
+exposure/mandatory-core results, it completes the rank-free accounting for the
+already established capacity refinement. The v1.0.1 rank proof and historical
+v1.1.0 partial addendum are preserved. Novelty is unestablished; no Lean theorem,
+human referee review or full Seymour endorsement is claimed.
+
+From the root, run `python3 -B residual-cover/src/reproduce.py`, then
+`python3 -B -O residual-cover/src/reproduce.py` and the independent oracle
+`python3 -B residual-cover/independent/checks.py` (also with -O).
+Diagnostic checks stay active under optimization; original corner geometry,
+strict certificate parsing and exact manifest inventory are verified.
+This additive edition preserves the preceding releases. The v1.2.0 release
+contains the selected package, checksum list and committed-source provenance.

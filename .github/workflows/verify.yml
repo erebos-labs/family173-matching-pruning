@@ -52,3 +52,13 @@ jobs:
         run: |
           python -B combinatorial-pruning/src/check_manifest.py
           python verify_manifest.py
+      - name: Constructive residual cover normal and optimized replay
+        run: |
+          python -B residual-cover/src/reproduce.py
+          python -B -O residual-cover/src/reproduce.py
+          python -B residual-cover/independent/checks.py
+          python -B -O residual-cover/independent/checks.py
+      - name: Final complete addendum integrity
+        run: |
+          python -B residual-cover/src/check_manifest.py
+          python verify_manifest.py

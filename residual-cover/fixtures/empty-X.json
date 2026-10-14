@@ -1,0 +1,57 @@
+{
+  "accounting": {
+    "certificates": {
+      "A": {
+        "cover": [],
+        "matching": []
+      },
+      "B": {
+        "cover": [],
+        "matching": []
+      },
+      "B_RT": {
+        "cover": [],
+        "matching": []
+      },
+      "B_alpha": {
+        "cover": [],
+        "matching": []
+      },
+      "Gamma": {
+        "cover": [],
+        "matching": []
+      },
+      "L": {
+        "cover": [],
+        "matching": []
+      },
+      "N": {
+        "cover": [],
+        "matching": []
+      }
+    },
+    "extension": [],
+    "extension_paths": [],
+    "extracted": []
+  },
+  "conversion": {
+    "KN": [],
+    "branch": "all-Z",
+    "selectors_C": [],
+    "selectors_Z": []
+  },
+  "instance": {
+    "C": [],
+    "R": [],
+    "arrows": [],
+    "n": 0
+  },
+  "label": "empty-X",
+  "request": {
+    "KB": [],
+    "W": [],
+    "alpha": [],
+    "order": []
+  },
+  "schema": 1
+}

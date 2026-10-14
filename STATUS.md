@@ -49,3 +49,14 @@ The original v1.0.1 capacity proof and evidence above are preserved. The
 exposure-transfer/mandatory-core proofs and a failed-shortcut counterexample.
 Its full rank-free residual remains unresolved. Strict certificate decoding
 and fresh normal/optimized controls are included; no Lean result is claimed.
+
+## Additive v1.2.0 status
+
+The [residual-cover addendum](residual-cover/STATUS.md) supplies an independently
+audited ordinary rank-free proof of the previously missing residual step.
+It completes the combinatorial capacity accounting while preserving earlier
+proofs and releases. Two diagnostic/integrity repairs and fresh normal/optimized
+controls are included. Novelty remains unestablished and no Lean result is
+claimed. The earlier unresolved status above describes v1.1.0 history.
+Local preparation results are recorded in the addendum. Hosted CI reports its
+actual outcomes on GitHub separately.

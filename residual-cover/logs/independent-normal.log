@@ -1,0 +1,3 @@
+{"event": "independent_selectors", "inclusions": 442368, "orders": 2, "status": "PASS", "supports": 512, "systems": 65536}
+{"arbitrary_seed_extractions": 4345, "event": "independent_conversion", "exhaustive_small_inputs": 4105, "fresh_larger_inputs": 240, "inputs": 4345, "nonminimum_covers": 13559, "nontrivial": 605, "requests": 33213, "status": "PASS", "strict_W_requests": 25995}
+{"event": "extra_corruptions", "rejected": ["valid_order_changed_without_reproof", "missing_selector_prefix", "wrong_selector_coordinate", "missing_accounting_cover", "wrong_output_branch"], "status": "PASS"}

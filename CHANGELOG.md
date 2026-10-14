@@ -1,5 +1,14 @@
 # Changes
 
+## v1.2.0 — 14 October 2026
+
+Add the independently audited constructive residual-cover proof completing the
+rank-free accounting of the existing capacity refinement. Repair optimized
+diagnostics and exact manifest inventory; add regression controls, portable
+independent checks and bounded CI commands. Preserve historical v1.1.0 partial
+material and v1.0.1 proof. Novelty unestablished; no Lean verification claim.
+Local evidence is retained; hosted CI outcomes are reported separately.
+
 ## v1.1.0 — 14 October 2026
 
 Add a qualified partial combinatorial exposure-transfer/mandatory-core addendum,
