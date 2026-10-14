@@ -1,0 +1,26 @@
+{
+  "C": [],
+  "R": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "n": 2,
+  "name": "one_side_empty",
+  "relation": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ]
+  ],
+  "schema": "family173.instance.v1"
+}

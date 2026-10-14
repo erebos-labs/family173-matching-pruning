@@ -1,0 +1,54 @@
+{
+  "derived": {
+    "H": [],
+    "Z": [],
+    "conflicts": []
+  },
+  "graphs": {
+    "A0": {
+      "cover_left": [],
+      "cover_right": [],
+      "edges": [],
+      "left": [],
+      "matching": [],
+      "right": [],
+      "size": 0
+    },
+    "B0": {
+      "cover_left": [],
+      "cover_right": [],
+      "edges": [],
+      "left": [],
+      "matching": [],
+      "right": [],
+      "size": 0
+    },
+    "Gamma": {
+      "cover_left": [],
+      "cover_right": [],
+      "edges": [],
+      "left": [],
+      "matching": [],
+      "right": [],
+      "size": 0
+    }
+  },
+  "instance_sha256": "ed082327128b5cba0cf0e4c11a5ed88104aa754174a9c8381097f4a6064926e1",
+  "pruning": {
+    "C_retained": [],
+    "R_retained": [],
+    "deletions": 0,
+    "q": 0,
+    "uncovered": [],
+    "value": 0
+  },
+  "schema": "family173.certificate.v1",
+  "stats": {
+    "H": 0,
+    "Z": 0,
+    "beta": 0,
+    "nu_A0": 0,
+    "nu_B0": 0,
+    "nu_Gamma": 0
+  }
+}

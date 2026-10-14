@@ -1,0 +1,35 @@
+{
+  "C": [
+    [
+      0,
+      3
+    ],
+    [
+      4,
+      4
+    ]
+  ],
+  "R": [
+    [
+      2,
+      1
+    ],
+    [
+      4,
+      4
+    ]
+  ],
+  "n": 5,
+  "name": "isolates_must_survive",
+  "relation": [
+    [
+      2,
+      0
+    ],
+    [
+      3,
+      1
+    ]
+  ],
+  "schema": "family173.instance.v1"
+}

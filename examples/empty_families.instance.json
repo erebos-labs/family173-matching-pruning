@@ -1,0 +1,25 @@
+{
+  "C": [],
+  "R": [],
+  "n": 2,
+  "name": "empty_families",
+  "relation": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "schema": "family173.instance.v1"
+}

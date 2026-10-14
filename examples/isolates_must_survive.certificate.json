@@ -1,0 +1,150 @@
+{
+  "derived": {
+    "H": [
+      [
+        2,
+        3
+      ]
+    ],
+    "Z": [
+      [
+        0,
+        1
+      ]
+    ],
+    "conflicts": [
+      [
+        "R:2:1",
+        "C:0:3"
+      ]
+    ]
+  },
+  "graphs": {
+    "A0": {
+      "cover_left": [
+        "H:2:3"
+      ],
+      "cover_right": [],
+      "edges": [
+        [
+          "H:2:3",
+          "C:0:3"
+        ]
+      ],
+      "left": [
+        "H:2:3"
+      ],
+      "matching": [
+        [
+          "H:2:3",
+          "C:0:3"
+        ]
+      ],
+      "right": [
+        "C:0:3",
+        "C:4:4"
+      ],
+      "size": 1
+    },
+    "B0": {
+      "cover_left": [
+        "R:2:1"
+      ],
+      "cover_right": [],
+      "edges": [
+        [
+          "R:2:1",
+          "H:2:3"
+        ]
+      ],
+      "left": [
+        "R:2:1",
+        "R:4:4"
+      ],
+      "matching": [
+        [
+          "R:2:1",
+          "H:2:3"
+        ]
+      ],
+      "right": [
+        "H:2:3"
+      ],
+      "size": 1
+    },
+    "Gamma": {
+      "cover_left": [
+        "R:2:1",
+        "ZL:0:1"
+      ],
+      "cover_right": [],
+      "edges": [
+        [
+          "R:2:1",
+          "C:0:3"
+        ],
+        [
+          "R:2:1",
+          "ZR:0:1"
+        ],
+        [
+          "ZL:0:1",
+          "C:0:3"
+        ]
+      ],
+      "left": [
+        "R:2:1",
+        "R:4:4",
+        "ZL:0:1"
+      ],
+      "matching": [
+        [
+          "R:2:1",
+          "ZR:0:1"
+        ],
+        [
+          "ZL:0:1",
+          "C:0:3"
+        ]
+      ],
+      "right": [
+        "C:0:3",
+        "C:4:4",
+        "ZR:0:1"
+      ],
+      "size": 2
+    }
+  },
+  "instance_sha256": "224422818398c84c2b705b6fb15f6ec5b99d80f1404f9b549cd837937a323d90",
+  "pruning": {
+    "C_retained": [
+      [
+        0,
+        3
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "R_retained": [
+      [
+        4,
+        4
+      ]
+    ],
+    "deletions": 1,
+    "q": 0,
+    "uncovered": [],
+    "value": 1
+  },
+  "schema": "family173.certificate.v1",
+  "stats": {
+    "H": 1,
+    "Z": 1,
+    "beta": 1,
+    "nu_A0": 1,
+    "nu_B0": 1,
+    "nu_Gamma": 2
+  }
+}

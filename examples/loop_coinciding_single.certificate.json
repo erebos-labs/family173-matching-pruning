@@ -1,0 +1,137 @@
+{
+  "derived": {
+    "H": [
+      [
+        0,
+        0
+      ]
+    ],
+    "Z": [
+      [
+        0,
+        0
+      ]
+    ],
+    "conflicts": [
+      [
+        "R:0:0",
+        "C:0:0"
+      ]
+    ]
+  },
+  "graphs": {
+    "A0": {
+      "cover_left": [
+        "H:0:0"
+      ],
+      "cover_right": [],
+      "edges": [
+        [
+          "H:0:0",
+          "C:0:0"
+        ]
+      ],
+      "left": [
+        "H:0:0"
+      ],
+      "matching": [
+        [
+          "H:0:0",
+          "C:0:0"
+        ]
+      ],
+      "right": [
+        "C:0:0"
+      ],
+      "size": 1
+    },
+    "B0": {
+      "cover_left": [
+        "R:0:0"
+      ],
+      "cover_right": [],
+      "edges": [
+        [
+          "R:0:0",
+          "H:0:0"
+        ]
+      ],
+      "left": [
+        "R:0:0"
+      ],
+      "matching": [
+        [
+          "R:0:0",
+          "H:0:0"
+        ]
+      ],
+      "right": [
+        "H:0:0"
+      ],
+      "size": 1
+    },
+    "Gamma": {
+      "cover_left": [
+        "R:0:0",
+        "ZL:0:0"
+      ],
+      "cover_right": [],
+      "edges": [
+        [
+          "R:0:0",
+          "C:0:0"
+        ],
+        [
+          "R:0:0",
+          "ZR:0:0"
+        ],
+        [
+          "ZL:0:0",
+          "C:0:0"
+        ]
+      ],
+      "left": [
+        "R:0:0",
+        "ZL:0:0"
+      ],
+      "matching": [
+        [
+          "R:0:0",
+          "ZR:0:0"
+        ],
+        [
+          "ZL:0:0",
+          "C:0:0"
+        ]
+      ],
+      "right": [
+        "C:0:0",
+        "ZR:0:0"
+      ],
+      "size": 2
+    }
+  },
+  "instance_sha256": "3b1ff43664efece8961ee19f3615586a30234ef5fa1de76fb53be2b12f195f02",
+  "pruning": {
+    "C_retained": [
+      [
+        0,
+        0
+      ]
+    ],
+    "R_retained": [],
+    "deletions": 1,
+    "q": 0,
+    "uncovered": [],
+    "value": 1
+  },
+  "schema": "family173.certificate.v1",
+  "stats": {
+    "H": 1,
+    "Z": 1,
+    "beta": 1,
+    "nu_A0": 1,
+    "nu_B0": 1,
+    "nu_Gamma": 2
+  }
+}

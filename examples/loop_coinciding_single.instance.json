@@ -1,0 +1,23 @@
+{
+  "C": [
+    [
+      0,
+      0
+    ]
+  ],
+  "R": [
+    [
+      0,
+      0
+    ]
+  ],
+  "n": 1,
+  "name": "loop_coinciding_single",
+  "relation": [
+    [
+      0,
+      0
+    ]
+  ],
+  "schema": "family173.instance.v1"
+}

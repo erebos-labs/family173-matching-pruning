@@ -1,0 +1,29 @@
+Family 173 matching-capacity pruning, public edition v1.0.1
+Published by Erebos Labs, 2026.
+
+Erebos Labs' note, implementations, generated certificates, audit checks,
+packaging and CI are provided under the Apache License, Version 2.0 (LICENSE).
+Preparation, implementation and agent review were AI-assisted.
+
+The unchanged files provenance/upstream-pinned/02-pruning.tex and PAPER_README.md
+are from OpenAI's openai/math repository at commit
+1581d4cbdd69a0faf34b2089614fe2a814316a6a. The pinned upstream Apache-2.0 licence
+is included unchanged as LICENSE and provenance/upstream-pinned/LICENSE.
+OpenAI's authorship and notices remain intact. No upstream source was modified.
+
+The conflict/coverage definitions, commuting matrix maps, generic coefficient
+selection, maximum-support kernel restriction and independent kernel images
+are inherited from OpenAI's argument. The note records a short structural
+capacity corollary, the converse-cover objective identity and sharpness
+calculations. None is asserted to be novel or to establish the full Seymour
+conjecture. Classical matching and matrix antecedents are attributed to Konig
+and Edmonds in the note. No literature PDF or text is redistributed.
+
+The public mathematical note has prominent edition-change notices. Sections
+1–9 are unchanged from the independently audited v1.0 preparation. Original
+src/tests scripts and examples remain unchanged. verify_manifest.py excludes
+Git metadata in checkout enumeration; independent/checks.py is adapted to the
+public layout. New packaging, status and CI files are identified by this edition.
+
+There is no claim of OpenAI endorsement, Lean verification or human referee
+review. Licence permissions and attribution do not imply endorsement.

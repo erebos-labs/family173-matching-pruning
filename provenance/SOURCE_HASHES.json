@@ -1,0 +1,47 @@
+{
+  "schema": "family173.source-hashes.v1",
+  "observation_date": "2026-10-14",
+  "pinned_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "hash_conventions": {
+    "sha256": "SHA-256 of exact local file bytes",
+    "git_blob_sha1": "SHA-1 of b\"blob \"+ASCII byte length+b\"\\0\"+exact file bytes; not raw-file SHA-1"
+  },
+  "snapshots": [
+    {
+      "name": "pinned pruning",
+      "local_path": "provenance/upstream-pinned/02-pruning.tex",
+      "repository": "openai/math",
+      "repository_path": "preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/02-pruning.tex",
+      "requested_ref": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "resolved_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "git_blob_sha1": "4fe3b01285d67d6fb5a5e7a8798a3c12f432ff76",
+      "sha256": "ba7ce7351b1edf1429c8e01533be6172e9e89ac6fca770c2ef5f1c59e918fdb0",
+      "bytes": 16261,
+      "acquisition": "Full source read through GitHub connector in two ranges. UTF-8 text transferred locally and Git blob independently recomputed."
+    },
+    {
+      "name": "paper README",
+      "local_path": "provenance/upstream-pinned/PAPER_README.md",
+      "repository": "openai/math",
+      "repository_path": "preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/README.md",
+      "requested_ref": "main",
+      "resolved_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "git_blob_sha1": "6e000397dcf9dd07c83e958cc48ca6ffd2fe0638",
+      "sha256": "05cccecfcdc490b68c443508f7669fbfee1f519874842a8087111c0188599ea9",
+      "bytes": 614,
+      "acquisition": "Full README read via GitHub connector. At observation main equaled the pinned commit. Text transferred and Git blob independently recomputed."
+    },
+    {
+      "name": "upstream license",
+      "local_path": "provenance/upstream-pinned/LICENSE",
+      "repository": "openai/math",
+      "repository_path": "LICENSE",
+      "requested_ref": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "resolved_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "git_blob_sha1": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357,
+      "acquisition": "Full upstream license read through connector. Local Apache-2.0 text was normalized to the observed bytes, then its Git blob was independently checked against the connector hash."
+    }
+  ]
+}

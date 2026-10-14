@@ -1,0 +1,26 @@
+{
+  "C": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "R": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "n": 2,
+  "name": "no_relation_coinciding",
+  "relation": [],
+  "schema": "family173.instance.v1"
+}
