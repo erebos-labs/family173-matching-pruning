@@ -27,3 +27,10 @@ public layout. New packaging, status and CI files are identified by this edition
 
 There is no claim of OpenAI endorsement, Lean verification or human referee
 review. Licence permissions and attribution do not imply endorsement.
+
+Additive v1.1.0 publication: the combinatorial-pruning directory is a qualified
+partial reformulation with exposure transfer, mandatory-core separation and a
+checked counterexample to a failed shortcut. Its full rank-free residual remains
+unresolved. New public material uses Apache-2.0; copied upstream files retain
+their unchanged licence and attribution. See combinatorial-pruning/NOTICE.md.
+The original v1.0.1 proof, commit, tag, release and assets remain unchanged.

@@ -1,0 +1,8 @@
+completed_n 1 original_inputs 1000
+completed_n 2 original_inputs 2000
+completed_n 3 original_inputs 3000
+completed_n 4 original_inputs 4000
+input_stream_sha256 53dac1b4360d93f3083d5d0e7fc63c805d102da53e12ae50e565e13fd4d59811
+totals {"core_extension_steps": 982, "fixed_alpha_route_checks": 4000, "normalization_L_steps": 925, "normalization_N_steps": 936, "original_inputs": 4000, "records_with_core": 102, "transposed_inputs": 4000}
+equal_size_matching_cover_certificates_checked 215823
+PASS: bounded falsification checks only; no universal proof or novelty claim.

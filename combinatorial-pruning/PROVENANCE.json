@@ -1,0 +1,81 @@
+{
+  "archived_sources": [
+    {
+      "archive_path": "sources/02-pruning.pinned.tex",
+      "bytes": 16261,
+      "git_blob_sha1": "4fe3b01285d67d6fb5a5e7a8798a3c12f432ff76",
+      "sha256": "ba7ce7351b1edf1429c8e01533be6172e9e89ac6fca770c2ef5f1c59e918fdb0",
+      "unchanged": true,
+      "upstream_path": "preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/02-pruning.tex",
+      "upstream_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/A-proof-of-Seymours-second-neighborhood-conjecture-September-23-2026/build/source/02-pruning.tex"
+    },
+    {
+      "archive_path": "sources/LICENSE.openai-math",
+      "bytes": 11357,
+      "git_blob_sha1": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "unchanged": true,
+      "upstream_path": "LICENSE",
+      "upstream_url": "https://github.com/openai/math/blob/1581d4cbdd69a0faf34b2089614fe2a814316a6a/LICENSE"
+    }
+  ],
+  "byte_identical_original_files": [
+    "fixtures/asymmetric-auxiliaries.json",
+    "fixtures/empty-C.json",
+    "fixtures/empty-R.json",
+    "fixtures/empty-X.json",
+    "fixtures/hall-shortcut-failure.json",
+    "fixtures/negative-integer-optimum.json",
+    "fixtures/no-conflicts.json",
+    "fixtures/one-loop-all-tags.json",
+    "fixtures/opposite-arrows.json",
+    "fixtures/sharp-n3.json",
+    "fixtures/sharp-plus-isolated.json",
+    "sources/02-pruning.pinned.tex",
+    "sources/LICENSE.openai-math",
+    "src/check_manifest.py",
+    "src/probe.py",
+    "src/producer.py",
+    "src/replay_probes.py",
+    "src/reproduce.py"
+  ],
+  "changed_original_files": {
+    "NOTE.md": "Public edition and actual review/execution status outside mathematical Sections 1\u20137",
+    "src/verify.py": "Strict certificate vertex and schema decoding"
+  },
+  "licensing": "New public material Apache-2.0; unchanged upstream source/licence retains Apache-2.0 and attribution",
+  "literature": [
+    {
+      "author": "Jack Edmonds",
+      "doi": "10.6028/jres.071B.033",
+      "read_scope": "primary text and screenshot of Section 5, Theorem 1, printed page 242; later parsed refetch timed out",
+      "title": "Systems of Distinct Representatives and Linear Algebra",
+      "year": 1967
+    },
+    {
+      "authors": [
+        "A. L. Dulmage",
+        "N. S. Mendelsohn"
+      ],
+      "doi": "10.4153/CJM-1958-052-0",
+      "read_scope": "publisher metadata and extract; full PDF not retrieved",
+      "title": "Coverings of Bipartite Graphs",
+      "year": 1958
+    },
+    {
+      "author": "Claude Berge",
+      "doi": "10.1073/pnas.43.9.842",
+      "read_scope": "bibliographic metadata located; opened PubMed page blocked by browser check; original article not retrieved",
+      "title": "Two Theorems in Graph Theory",
+      "year": 1957
+    }
+  ],
+  "mathematical_sections_1_to_7_unchanged": true,
+  "original_archive_bytes": 224206,
+  "original_archive_sha256": "62f2fb43b68e8076b9b491db03c0c7c1db84a8b98c1c296fa6ea2e079cbf9b3b",
+  "pin": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "publisher": "Erebos Labs",
+  "schema": "family173.partial-public-provenance.v1",
+  "scope": "PARTIAL exposure-transfer and mandatory-core result; full rank-free residual unresolved; novelty unestablished; no Lean claim",
+  "version": "1.1.0"
+}

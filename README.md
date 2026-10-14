@@ -1,6 +1,6 @@
 # Family 173: matching-capacity pruning
 
-Erebos Labs, public edition **v1.0.1**.
+Erebos Labs. Capacity corollary **v1.0.1**, with partial combinatorial addendum **v1.1.0**.
 
 For the exact conflict and coverage definitions in [the note](MATHEMATICAL_NOTE.md),
 let Z,H be the original corner sets, Gamma the augmented bipartite graph, and
@@ -105,3 +105,18 @@ python3 tools/package_release.py --output /tmp/family173-release-assets
 
 The packager refuses an existing output asset. Do not reseal merely to accept
 unexpected changes.
+
+## Partial combinatorial addendum — v1.1.0
+
+[combinatorial-pruning/](combinatorial-pruning/) adds independently audited
+rank-free exposure transfer, mandatory-core separation and a checked failed-
+shortcut counterexample. The complete rank-free residual proof remains unresolved.
+The original capacity theorem and its v1.0.1 rank proof above are unchanged.
+
+The addendum includes hardened certificate decoding, 28 targeted rejection
+regressions, its ordinary partial proof, reproducible fixtures and independent
+finite checks. Novelty is unestablished and no Lean claim is made. See its
+[status](combinatorial-pruning/STATUS.md) and
+[limitations](combinatorial-pruning/LIMITATIONS.md). The
+[v1.1.0 release](https://github.com/erebos-labs/family173-matching-pruning/releases/tag/v1.1.0)
+is additive; the earlier v1.0.1 tag, release and assets remain available.

@@ -34,3 +34,21 @@ jobs:
           python -O independent/checks.py
       - name: Final source integrity
         run: python verify_manifest.py
+      - name: Partial combinatorial addendum and deterministic fixtures
+        run: |
+          python -B combinatorial-pruning/src/check_manifest.py
+          python -B combinatorial-pruning/src/verify.py
+          python -B combinatorial-pruning/src/reproduce.py
+          python -B combinatorial-pruning/tests/decoder_mutations.py
+          python -B combinatorial-pruning/independent/checks.py
+      - name: Certified partial probes in normal and optimized Python
+        run: |
+          python -B combinatorial-pruning/src/replay_probes.py
+          python -B -O combinatorial-pruning/src/replay_probes.py
+          python -B -O combinatorial-pruning/src/verify.py
+          python -B -O combinatorial-pruning/tests/decoder_mutations.py
+          python -B -O combinatorial-pruning/independent/checks.py
+      - name: Final additive package integrity
+        run: |
+          python -B combinatorial-pruning/src/check_manifest.py
+          python verify_manifest.py

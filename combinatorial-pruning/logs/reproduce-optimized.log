@@ -1,0 +1,59 @@
+syntax_checked_python_files 6
+produced asymmetric-auxiliaries
+produced empty-C
+produced empty-R
+produced empty-X
+produced hall-shortcut-failure
+produced negative-integer-optimum
+produced no-conflicts
+produced one-loop-all-tags
+produced opposite-arrows
+produced sharp-n3
+produced sharp-plus-isolated
+source_bytes 16261 git_blob_sha1 4fe3b01285d67d6fb5a5e7a8798a3c12f432ff76
+source_sha256 ba7ce7351b1edf1429c8e01533be6172e9e89ac6fca770c2ef5f1c59e918fdb0
+asymmetric-auxiliaries {"A": 2, "B": 1, "Gamma": 3, "H": 2, "L": 1, "N": 2, "Z": 2, "admissible_prunings": 9, "delta_B": 0, "ell": 1, "k": 0, "pruning_optimum": 1, "shortcut_deficiency": 0, "t": 2}
+empty-C {"A": 0, "B": 0, "Gamma": 0, "H": 0, "L": 0, "N": 0, "Z": 0, "admissible_prunings": 1, "delta_B": 2, "ell": 0, "k": 0, "pruning_optimum": 0, "shortcut_deficiency": 2, "t": 0}
+empty-R {"A": 0, "B": 0, "Gamma": 0, "H": 0, "L": 0, "N": 0, "Z": 0, "admissible_prunings": 1, "delta_B": 0, "ell": 0, "k": 0, "pruning_optimum": 0, "shortcut_deficiency": 0, "t": 0}
+empty-X {"A": 0, "B": 0, "Gamma": 0, "H": 0, "L": 0, "N": 0, "Z": 0, "admissible_prunings": 1, "delta_B": 0, "ell": 0, "k": 0, "pruning_optimum": 0, "shortcut_deficiency": 0, "t": 0}
+hall-shortcut-failure {"A": 1, "B": 1, "Gamma": 4, "H": 1, "L": 2, "N": 2, "Z": 4, "admissible_prunings": 7, "delta_B": 1, "ell": 2, "k": 0, "pruning_optimum": 0, "shortcut_deficiency": 0, "t": 2}
+negative-integer-optimum {"A": 1, "B": 1, "Gamma": 6, "H": 1, "L": 3, "N": 3, "Z": 9, "admissible_prunings": 15, "delta_B": 2, "ell": 3, "k": 0, "pruning_optimum": -3, "shortcut_deficiency": 0, "t": 3}
+no-conflicts {"A": 0, "B": 0, "Gamma": 0, "H": 0, "L": 0, "N": 0, "Z": 0, "admissible_prunings": 1, "delta_B": 1, "ell": 0, "k": 0, "pruning_optimum": 0, "shortcut_deficiency": 1, "t": 0}
+one-loop-all-tags {"A": 1, "B": 1, "Gamma": 2, "H": 1, "L": 1, "N": 1, "Z": 1, "admissible_prunings": 3, "delta_B": 0, "ell": 1, "k": 0, "pruning_optimum": 1, "shortcut_deficiency": 0, "t": 1}
+opposite-arrows {"A": 2, "B": 2, "Gamma": 4, "H": 2, "L": 2, "N": 2, "Z": 2, "admissible_prunings": 9, "delta_B": 0, "ell": 2, "k": 0, "pruning_optimum": 2, "shortcut_deficiency": 0, "t": 2}
+sharp-n3 {"A": 3, "B": 3, "Gamma": 4, "H": 9, "L": 1, "N": 1, "Z": 1, "admissible_prunings": 15, "delta_B": 0, "ell": 1, "k": 2, "pruning_optimum": 3, "shortcut_deficiency": 0, "t": 1}
+sharp-plus-isolated {"A": 2, "B": 2, "Gamma": 3, "H": 4, "L": 1, "N": 1, "Z": 1, "admissible_prunings": 7, "delta_B": 1, "ell": 1, "k": 1, "pruning_optimum": 2, "shortcut_deficiency": 1, "t": 1}
+rejected_certificate_mutations 6
+equal_size_matching_cover_certificates_checked 221
+PASS: eleven fixtures and their exact transpositions; finite evidence only.
+byte_identical_fixtures 11 hash_seed 0
+produced asymmetric-auxiliaries
+produced empty-C
+produced empty-R
+produced empty-X
+produced hall-shortcut-failure
+produced negative-integer-optimum
+produced no-conflicts
+produced one-loop-all-tags
+produced opposite-arrows
+produced sharp-n3
+produced sharp-plus-isolated
+source_bytes 16261 git_blob_sha1 4fe3b01285d67d6fb5a5e7a8798a3c12f432ff76
+source_sha256 ba7ce7351b1edf1429c8e01533be6172e9e89ac6fca770c2ef5f1c59e918fdb0
+asymmetric-auxiliaries {"A": 2, "B": 1, "Gamma": 3, "H": 2, "L": 1, "N": 2, "Z": 2, "admissible_prunings": 9, "delta_B": 0, "ell": 1, "k": 0, "pruning_optimum": 1, "shortcut_deficiency": 0, "t": 2}
+empty-C {"A": 0, "B": 0, "Gamma": 0, "H": 0, "L": 0, "N": 0, "Z": 0, "admissible_prunings": 1, "delta_B": 2, "ell": 0, "k": 0, "pruning_optimum": 0, "shortcut_deficiency": 2, "t": 0}
+empty-R {"A": 0, "B": 0, "Gamma": 0, "H": 0, "L": 0, "N": 0, "Z": 0, "admissible_prunings": 1, "delta_B": 0, "ell": 0, "k": 0, "pruning_optimum": 0, "shortcut_deficiency": 0, "t": 0}
+empty-X {"A": 0, "B": 0, "Gamma": 0, "H": 0, "L": 0, "N": 0, "Z": 0, "admissible_prunings": 1, "delta_B": 0, "ell": 0, "k": 0, "pruning_optimum": 0, "shortcut_deficiency": 0, "t": 0}
+hall-shortcut-failure {"A": 1, "B": 1, "Gamma": 4, "H": 1, "L": 2, "N": 2, "Z": 4, "admissible_prunings": 7, "delta_B": 1, "ell": 2, "k": 0, "pruning_optimum": 0, "shortcut_deficiency": 0, "t": 2}
+negative-integer-optimum {"A": 1, "B": 1, "Gamma": 6, "H": 1, "L": 3, "N": 3, "Z": 9, "admissible_prunings": 15, "delta_B": 2, "ell": 3, "k": 0, "pruning_optimum": -3, "shortcut_deficiency": 0, "t": 3}
+no-conflicts {"A": 0, "B": 0, "Gamma": 0, "H": 0, "L": 0, "N": 0, "Z": 0, "admissible_prunings": 1, "delta_B": 1, "ell": 0, "k": 0, "pruning_optimum": 0, "shortcut_deficiency": 1, "t": 0}
+one-loop-all-tags {"A": 1, "B": 1, "Gamma": 2, "H": 1, "L": 1, "N": 1, "Z": 1, "admissible_prunings": 3, "delta_B": 0, "ell": 1, "k": 0, "pruning_optimum": 1, "shortcut_deficiency": 0, "t": 1}
+opposite-arrows {"A": 2, "B": 2, "Gamma": 4, "H": 2, "L": 2, "N": 2, "Z": 2, "admissible_prunings": 9, "delta_B": 0, "ell": 2, "k": 0, "pruning_optimum": 2, "shortcut_deficiency": 0, "t": 2}
+sharp-n3 {"A": 3, "B": 3, "Gamma": 4, "H": 9, "L": 1, "N": 1, "Z": 1, "admissible_prunings": 15, "delta_B": 0, "ell": 1, "k": 2, "pruning_optimum": 3, "shortcut_deficiency": 0, "t": 1}
+sharp-plus-isolated {"A": 2, "B": 2, "Gamma": 3, "H": 4, "L": 1, "N": 1, "Z": 1, "admissible_prunings": 7, "delta_B": 1, "ell": 1, "k": 1, "pruning_optimum": 2, "shortcut_deficiency": 1, "t": 1}
+rejected_certificate_mutations 6
+equal_size_matching_cover_certificates_checked 221
+PASS: eleven fixtures and their exact transpositions; finite evidence only.
+byte_identical_fixtures 11 hash_seed 1
+fixture_stream_sha256 df0eb3b68850ccdbdeba8e306acb5039f897be74ce757c9e768a1a9c2b28a648
+PASS: syntax checks and deterministic fixture regeneration.

@@ -41,3 +41,11 @@ The independent checker is adapted to a portable public-tree layout.
 Novelty/priority is unestablished. This is a short source corollary, not a new
 Seymour proof strategy. The full manuscript and downstream consequences are
 outside scope. No Lean formalization is delivered.
+
+## Additive v1.1.0 status
+
+The original v1.0.1 capacity proof and evidence above are preserved. The
+[combinatorial addendum](combinatorial-pruning/STATUS.md) supplies audited partial
+exposure-transfer/mandatory-core proofs and a failed-shortcut counterexample.
+Its full rank-free residual remains unresolved. Strict certificate decoding
+and fresh normal/optimized controls are included; no Lean result is claimed.

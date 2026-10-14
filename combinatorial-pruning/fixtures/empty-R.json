@@ -1,0 +1,127 @@
+{
+  "certificates": {
+    "A": {
+      "cover": [],
+      "matching": []
+    },
+    "B": {
+      "cover": [],
+      "matching": []
+    },
+    "Balpha": {
+      "cover": [],
+      "matching": []
+    },
+    "Bminus": {
+      "cover": [],
+      "matching": []
+    },
+    "Gamma": {
+      "cover": [],
+      "matching": []
+    },
+    "L": {
+      "cover": [],
+      "matching": []
+    },
+    "N": {
+      "cover": [],
+      "matching": []
+    }
+  },
+  "core_extension": {
+    "final": {
+      "cover": [],
+      "matching": []
+    },
+    "paths": [],
+    "selected": []
+  },
+  "exposure_deletions": {
+    "A_right": [
+      {
+        "certificate": {
+          "cover": [],
+          "matching": []
+        },
+        "removed": [
+          "C",
+          0,
+          0
+        ]
+      },
+      {
+        "certificate": {
+          "cover": [],
+          "matching": []
+        },
+        "removed": [
+          "C",
+          1,
+          1
+        ]
+      }
+    ],
+    "B_left": [],
+    "N_left": [],
+    "N_right": [
+      {
+        "certificate": {
+          "cover": [],
+          "matching": []
+        },
+        "removed": [
+          "C",
+          0,
+          0
+        ]
+      },
+      {
+        "certificate": {
+          "cover": [],
+          "matching": []
+        },
+        "removed": [
+          "C",
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  "instance": {
+    "C": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "R": [],
+    "arrows": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "n": 2
+  },
+  "normalization_start": [],
+  "normalization_trace": [],
+  "schema": 1
+}

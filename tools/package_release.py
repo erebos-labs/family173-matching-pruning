@@ -3,7 +3,7 @@
 import argparse,hashlib,json,subprocess,sys,zipfile
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-VERSION='1.0.1'
+VERSION='1.1.0'
 NAME='family173-matching-pruning-v'+VERSION
 ap=argparse.ArgumentParser(description=__doc__)
 ap.add_argument('--output',type=Path,required=True)
@@ -32,8 +32,9 @@ provenance={'schema':'family173.release-provenance.v1','version':VERSION,
   'release':'https://github.com/erebos-labs/family173-matching-pruning/releases/tag/v'+VERSION,
   'commit':commit,'package':{'name':targets[0].name,'bytes':targets[0].stat().st_size,'sha256':digest},
   'input_archive_sha256':'b2434d3008af12f7c7f4b0e495b8439cf25f36461987773752e6d79fc7118b83',
+  'partial_input_archive_sha256':'62f2fb43b68e8076b9b491db03c0c7c1db84a8b98c1c296fa6ea2e079cbf9b3b',
   'upstream_commit':'1581d4cbdd69a0faf34b2089614fe2a814316a6a',
-  'scope':'Short structural corollary; novelty unestablished; no Lean or full Seymour endorsement.'}
+  'scope':'Capacity corollary plus PARTIAL exposure-transfer/mandatory-core addendum; full rank-free residual unresolved; novelty unestablished; no Lean or full Seymour endorsement.'}
 targets[2].write_text(json.dumps(provenance,indent=2,sort_keys=True)+'\n')
 sums={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in (targets[0],targets[2])}
 targets[1].write_text(''.join(sums[n]+'  '+n+'\n' for n in sorted(sums)))

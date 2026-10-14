@@ -1,0 +1,55 @@
+{
+  "certificates": {
+    "A": {
+      "cover": [],
+      "matching": []
+    },
+    "B": {
+      "cover": [],
+      "matching": []
+    },
+    "Balpha": {
+      "cover": [],
+      "matching": []
+    },
+    "Bminus": {
+      "cover": [],
+      "matching": []
+    },
+    "Gamma": {
+      "cover": [],
+      "matching": []
+    },
+    "L": {
+      "cover": [],
+      "matching": []
+    },
+    "N": {
+      "cover": [],
+      "matching": []
+    }
+  },
+  "core_extension": {
+    "final": {
+      "cover": [],
+      "matching": []
+    },
+    "paths": [],
+    "selected": []
+  },
+  "exposure_deletions": {
+    "A_right": [],
+    "B_left": [],
+    "N_left": [],
+    "N_right": []
+  },
+  "instance": {
+    "C": [],
+    "R": [],
+    "arrows": [],
+    "n": 0
+  },
+  "normalization_start": [],
+  "normalization_trace": [],
+  "schema": 1
+}
