@@ -1,0 +1,4 @@
+'LocalFinalAudit.literalObjective_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LocalFinalAudit.actual_minimum_semantics' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LocalFinalAudit.every_positive_size' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LocalFinalAudit.real_counterexample_nonvacuous' depends on axioms: [propext, Classical.choice, Quot.sound]

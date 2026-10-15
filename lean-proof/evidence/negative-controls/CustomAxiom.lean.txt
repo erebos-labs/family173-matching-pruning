@@ -1,0 +1,3 @@
+axiom forbiddenProbe : False
+theorem probe : False := forbiddenProbe
+#print axioms probe

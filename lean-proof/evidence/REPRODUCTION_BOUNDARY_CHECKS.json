@@ -1,0 +1,17 @@
+[
+  {
+    "name": "optimized-run-rejected",
+    "status": "PASS expected refusal",
+    "exit_code": 2
+  },
+  {
+    "name": "existing-output-rejected",
+    "status": "PASS expected refusal",
+    "exit_code": 2
+  },
+  {
+    "name": "source-tree-output-rejected",
+    "status": "PASS expected refusal",
+    "exit_code": 2
+  }
+]

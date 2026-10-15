@@ -1,0 +1,7 @@
+Family173/MatchingMaps.lean:7:0: warning: automatically included section variable(s) unused in theorem `Family173.matchingNumber_le_flip`:
+  [DecidableEq L]
+  [DecidableEq R]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq L] [DecidableEq R] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`

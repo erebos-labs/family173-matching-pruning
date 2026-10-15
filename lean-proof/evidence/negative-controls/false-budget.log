@@ -1,0 +1,6 @@
+FalseBudget.lean:3:87: error: Type mismatch
+  Sharp.Gamma_number 0
+has type
+  matchingNumber (AugmentedEdge (Sharp.edge 0) (Sharp.R 0) (Sharp.C 0)) = 0 + 1 + 1
+but is expected to have type
+  matchingNumber (AugmentedEdge (Sharp.edge 0) (Sharp.R 0) (Sharp.C 0)) = 1

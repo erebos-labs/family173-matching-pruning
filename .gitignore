@@ -1,3 +1,7 @@
 __pycache__/
 *.pyc
 .DS_Store
+
+# Project-local pinned source dependencies; never release compiled caches.
+lean-proof/project/.deps/
+lean-proof/project/.lake/

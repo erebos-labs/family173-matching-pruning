@@ -1,0 +1,5 @@
+MissingArtifact.lean:1:0: error: unknown module prefix 'Family173'
+
+No directory 'Family173' or file 'Family173.olean' in the search path entries:
+earlier-clean-run/acceptance-20261015T100713Z/negative-controls/empty-output
+LEAN_TOOLCHAIN/lib/lean

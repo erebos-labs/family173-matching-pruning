@@ -1,0 +1,55 @@
+PruningAcceptance.lean:17:0: warning: automatically included section variable(s) unused in theorem `FinalPruningAudit.admissible_exact`:
+  [Fintype X]
+  [DecidableEq X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype X] [DecidableEq X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+theorem FinalPruningAudit.exact_published_optimum_and_attainment.{u_1} : ∀ {X : Type u_1} [inst : Fintype X]
+  [inst_1 : DecidableEq X] (r : X → X → Prop) (R C : Finset (X × X)),
+  minimumPruningObjective r R C = ↑(matchingNumber (AugmentedEdge r R C)) - ↑(FinalAudit.Znote r R C).card ∧
+    minimumPruningObjective r R C ≤
+        ↑(min (matchingNumber (B0 r R (FinalAudit.Hnote r R C))) (matchingNumber (A0 r (FinalAudit.Hnote r R C) C))) ∧
+      ∃ R' C',
+        AdmissibleNote r R C R' C' ∧
+          ↑((R \ R').card + (C \ C').card) - ↑(qNote r R C R' C').card = minimumPruningObjective r R C ∧
+            (R \ R').card + (C \ C').card ≤
+              min (matchingNumber (B0 r R (FinalAudit.Hnote r R C)))
+                  (matchingNumber (A0 r (FinalAudit.Hnote r R C) C)) +
+                (qNote r R C R' C').card :=
+fun {X} [Fintype X] [DecidableEq X] r R C =>
+  ⟨minimum_pruning_identity r R C,
+    ⟨minimum_pruning_le_beta r R C,
+      Exists.casesOn (exists_admissible_optimal r R C) fun R' h =>
+        Exists.casesOn h fun C' h =>
+          And.casesOn h fun hAd hObj =>
+            have hEq := Eq.trans hObj (Eq.symm (minimum_pruning_identity r R C));
+            have hBudget :=
+              have hCap := matching_capacity r R C;
+              have arithmetic := fun d q g z b a a_1 =>
+                Decidable.byContradiction fun a_2 =>
+                  exact_published_optimum_and_attainment._proof_1_1 r R C R' C' d q g z b a a_1 a_2;
+              arithmetic (deletions R C R' C') (uncoveredZ r R C R' C').card (matchingNumber (AugmentedEdge r R C))
+                (Z r R C).card (min (matchingNumber (B0 r R (H r R C))) (matchingNumber (A0 r (H r R C) C))) hObj hCap;
+            Exists.intro R'
+              (Exists.intro C'
+                ⟨(admissible_exact r R C R' C').mpr hAd,
+                  ⟨Eq.mpr
+                      (id
+                        (congrArg
+                          (fun _a => ↑((R \ R').card + (C \ C').card) - ↑_a.card = minimumPruningObjective r R C)
+                          (qNote_exact r R C R' C')))
+                      hEq,
+                    Eq.mpr
+                      (id
+                        (congrArg
+                          (fun _a =>
+                            (R \ R').card + (C \ C').card ≤
+                              min (matchingNumber (B0 r R (FinalAudit.Hnote r R C)))
+                                  (matchingNumber (A0 r (FinalAudit.Hnote r R C) C)) +
+                                _a.card)
+                          (qNote_exact r R C R' C')))
+                      hBudget⟩⟩)⟩⟩
+'FinalPruningAudit.exact_published_optimum_and_attainment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FinalPruningAudit.admissible_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FinalPruningAudit.qNote_exact' depends on axioms: [propext, Classical.choice, Quot.sound]

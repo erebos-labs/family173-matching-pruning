@@ -1,0 +1,2 @@
+Admission.lean:1:8: warning: declaration uses `sorry`
+'admissionProbe' depends on axioms: [sorryAx]

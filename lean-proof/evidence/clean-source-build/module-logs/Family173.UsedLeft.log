@@ -1,0 +1,24 @@
+Family173/UsedLeft.lean:10:0: warning: automatically included section variable(s) unused in theorem `Family173.usedLeft_subset`:
+  [Fintype X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Family173/UsedLeft.lean:20:0: warning: automatically included section variable(s) unused in theorem `Family173.onUsedLeft_matching`:
+  [Fintype X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Family173/UsedLeft.lean:44:0: warning: automatically included section variable(s) unused in theorem `Family173.onUsedLeft_saturates`:
+  [Fintype X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Family173/UsedLeft.lean:59:0: warning: automatically included section variable(s) unused in theorem `Family173.usedLeft_card`:
+  [Fintype X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`

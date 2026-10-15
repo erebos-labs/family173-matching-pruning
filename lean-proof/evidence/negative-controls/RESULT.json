@@ -1,0 +1,139 @@
+{
+  "status": "PASS",
+  "Family173_axiom_reports": 120,
+  "literal_acceptance_reports": {
+    "Acceptance": 3,
+    "IndependentAcceptance": 3,
+    "Nonvacuity": 6,
+    "CapacityAcceptance": 2,
+    "PruningAcceptance": 3,
+    "SharpAcceptance": 2
+  },
+  "preserved_semantic_reports": 4,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "local_source_token_scan": "PASS",
+  "negative_controls_rejected": [
+    "custom-axiom",
+    "admission",
+    "false-budget",
+    "missing-artifact",
+    "dependency-pin"
+  ],
+  "positive_budget_control": "PASS",
+  "source_build_records_hash_checked": 1035,
+  "commands": [
+    {
+      "name": "preserved-semantic-audit",
+      "command": [
+        "LEAN_TOOLCHAIN/bin/lean",
+        "-t",
+        "0",
+        "-DautoImplicit=false",
+        "-o",
+        "earlier-clean-run/acceptance-20261015T100713Z/preserved-semantic-audit.olean",
+        "LocalSemanticAudit.lean"
+      ],
+      "cwd": "lean-proof",
+      "exit_code": 0,
+      "log": "earlier-clean-run/acceptance-20261015T100713Z/preserved-semantic-audit.log",
+      "log_sha256": "4870cb1fc3982eb853eb8ae94d9576f8e02c50f97d700ed8a004e42d4b0c3223"
+    },
+    {
+      "name": "custom-axiom",
+      "command": [
+        "LEAN_TOOLCHAIN/bin/lean",
+        "-t",
+        "0",
+        "-DautoImplicit=false",
+        "-o",
+        "earlier-clean-run/acceptance-20261015T100713Z/custom-axiom.olean",
+        "CustomAxiom.lean"
+      ],
+      "cwd": "earlier-clean-run/acceptance-20261015T100713Z/negative-controls",
+      "exit_code": 0,
+      "log": "earlier-clean-run/acceptance-20261015T100713Z/custom-axiom.log",
+      "log_sha256": "14a81040dda2584e9d45601820d22e02d24758badc75fd7c29593a8a9c3f5fd0"
+    },
+    {
+      "name": "admission",
+      "command": [
+        "LEAN_TOOLCHAIN/bin/lean",
+        "-t",
+        "0",
+        "-DautoImplicit=false",
+        "-o",
+        "earlier-clean-run/acceptance-20261015T100713Z/admission.olean",
+        "Admission.lean"
+      ],
+      "cwd": "earlier-clean-run/acceptance-20261015T100713Z/negative-controls",
+      "exit_code": 0,
+      "log": "earlier-clean-run/acceptance-20261015T100713Z/admission.log",
+      "log_sha256": "355f4e159b54523ede4792438a06445dca8128e1e41d7a1150b327d12a7fa309"
+    },
+    {
+      "name": "valid-budget-control",
+      "command": [
+        "LEAN_TOOLCHAIN/bin/lean",
+        "-t",
+        "0",
+        "-DautoImplicit=false",
+        "-o",
+        "earlier-clean-run/acceptance-20261015T100713Z/valid-budget-control.olean",
+        "ValidBudget.lean"
+      ],
+      "cwd": "earlier-clean-run/acceptance-20261015T100713Z/negative-controls",
+      "exit_code": 0,
+      "log": "earlier-clean-run/acceptance-20261015T100713Z/valid-budget-control.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "false-budget",
+      "command": [
+        "LEAN_TOOLCHAIN/bin/lean",
+        "-t",
+        "0",
+        "-DautoImplicit=false",
+        "-o",
+        "earlier-clean-run/acceptance-20261015T100713Z/false-budget.olean",
+        "FalseBudget.lean"
+      ],
+      "cwd": "earlier-clean-run/acceptance-20261015T100713Z/negative-controls",
+      "exit_code": 1,
+      "log": "earlier-clean-run/acceptance-20261015T100713Z/false-budget.log",
+      "log_sha256": "db88fa5ce9152ae7c17c905258021c35daddde143e15326f432d87c3a520aa69"
+    },
+    {
+      "name": "missing-artifact",
+      "command": [
+        "LEAN_TOOLCHAIN/bin/lean",
+        "-t",
+        "0",
+        "-DautoImplicit=false",
+        "-o",
+        "earlier-clean-run/acceptance-20261015T100713Z/missing-artifact.olean",
+        "MissingArtifact.lean"
+      ],
+      "cwd": "earlier-clean-run/acceptance-20261015T100713Z/negative-controls",
+      "exit_code": 1,
+      "log": "earlier-clean-run/acceptance-20261015T100713Z/missing-artifact.log",
+      "log_sha256": "68551f7bf3504016585953a7fff5738f5a92243c9dd902b13592697a4e3b9cbf"
+    },
+    {
+      "name": "dependency-pin",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "earlier-clean-run/acceptance-20261015T100713Z/negative-controls/pin-probe/project/scripts/verify"
+      ],
+      "exit_code": 1,
+      "log": "earlier-clean-run/acceptance-20261015T100713Z/dependency-pin.log",
+      "log_sha256": "7eca763171cc60a80794003b66fd067ebddb7da83de07ac76fccbca13cf452b7"
+    }
+  ],
+  "independent_reviewer": false,
+  "limits": "Fresh execution and same-driver checks; no independent mathematical review or whole-manuscript claim."
+}

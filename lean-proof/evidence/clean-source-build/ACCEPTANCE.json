@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "build_modules": 1035,
+  "local_modules": 36,
+  "external_modules": 999,
+  "axiom_report_counts": {
+    "FullAxiomAudit": 120,
+    "Acceptance": 3,
+    "IndependentAcceptance": 3,
+    "Nonvacuity": 6,
+    "CapacityAcceptance": 2,
+    "PruningAcceptance": 3,
+    "SharpAcceptance": 2
+  },
+  "semantic_reports": 4,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "source_token_scan": "PASS",
+  "cache_policy": "Only fresh central output on LEAN_PATH; no cached project or package outputs.",
+  "limits": "Pinned compiler distribution is trusted, not bootstrapped. Needed source closure only; not all Mathlib."
+}

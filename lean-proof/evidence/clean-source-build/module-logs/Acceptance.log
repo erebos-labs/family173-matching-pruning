@@ -1,0 +1,27 @@
+theorem Family173.cover_conversion.{u_1} : ∀ {X : Type u_1} [inst : Fintype X] [inst_1 : DecidableEq X]
+  (r : X → X → Prop) (R C : Finset (X × X)), Family173.CoverConversionStatement r R C :=
+fun {X} [Fintype X] [DecidableEq X] r R C => Family173.cover_conversion_of_order r R C
+theorem exact_published_CC.{u_1} : ∀ {X : Type u_1} [inst : Fintype X] [inst_1 : DecidableEq X] (r : X → X → Prop)
+  (R C W : Finset (X × X)),
+  W ⊆ R →
+    ∀ (α : Finset (↥W × ↥(Pruning.Z r R C))),
+      IsMatching (fun w z => (↑w).2 = (↑z).2 ∧ r (↑w).1 (↑z).1) α →
+        leftVertices α = Finset.univ →
+          ∀ (U : Finset ↥W) (V : Finset ↥(Pruning.H r R C)),
+            IsVertexCover (fun w h => (↑w).1 = (↑h).1 ∧ r (↑h).2 (↑w).2) U V →
+              ∃ A D,
+                IsVertexCover (fun z c => (↑c).1 = (↑z).1 ∧ r (↑c).2 (↑z).2) A D ∧
+                  ↑(A.card + D.card) ≤ ↑(Pruning.Z r R C).card - ↑W.card + ↑(U.card + V.card) :=
+fun {X} [Fintype X] [DecidableEq X] r R C W hWR α hα hSat U V hKB =>
+  Exists.casesOn (Family173.cover_conversion r R C W hWR α hα hSat U V hKB) fun A h =>
+    Exists.casesOn h fun D h =>
+      And.casesOn h fun hN hBudget =>
+        Exists.intro A
+          (Exists.intro D
+            ⟨hN,
+              (Family173.additive_budget_iff_integer_budget (A.card + D.card) W.card (Pruning.Z r R C).card
+                    (U.card + V.card)).mp
+                (Decidable.byContradiction fun a => exact_published_CC._proof_1_1 r R C W U V A D hBudget a)⟩)
+'Family173.cover_conversion_of_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Family173.cover_conversion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'exact_published_CC' depends on axioms: [propext, Classical.choice, Quot.sound]

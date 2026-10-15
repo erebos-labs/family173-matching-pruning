@@ -1,0 +1,21 @@
+theorem FinalAudit.independent_CC.{u_1} : ∀ {X : Type u_1} [inst : Fintype X] [inst_1 : DecidableEq X]
+  (r : X → X → Prop) (R C W : Finset (X × X)),
+  W ⊆ R →
+    ∀ (α : Finset (↥W × ↥(Znote r R C))),
+      (∀ e ∈ α, (↑e.1).2 = (↑e.2).2 ∧ r (↑e.1).1 (↑e.2).1) ∧ Set.InjOn Prod.fst ↑α ∧ Set.InjOn Prod.snd ↑α →
+        Finset.image Prod.fst α = Finset.univ →
+          ∀ (U : Finset ↥W) (V : Finset ↥(Hnote r R C)),
+            (∀ (w : ↥W) (h : ↥(Hnote r R C)), (↑w).1 = (↑h).1 ∧ r (↑h).2 (↑w).2 → w ∈ U ∨ h ∈ V) →
+              ∃ A D,
+                (∀ (z : ↥(Znote r R C)) (c : ↥C), (↑c).1 = (↑z).1 ∧ r (↑c).2 (↑z).2 → z ∈ A ∨ c ∈ D) ∧
+                  ↑A.card + ↑D.card ≤ ↑(Znote r R C).card - ↑W.card + ↑U.card + ↑V.card :=
+fun {X} [Fintype X] [DecidableEq X] r R C W hW α hα hSat U V hKB =>
+  Exists.casesOn (exact_published_CC r R C W hW α hα hSat U V hKB) fun A h =>
+    Exists.casesOn h fun D h =>
+      And.casesOn h fun hN hB =>
+        have convert_budget := fun a d z w u v a_1 =>
+          Decidable.byContradiction fun a_2 => independent_CC._proof_1_1 r R C W U V A D a d z w u v a_1 a_2;
+        Exists.intro A (Exists.intro D ⟨hN, convert_budget A.card D.card (Znote r R C).card W.card U.card V.card hB⟩)
+'FinalAudit.independent_CC' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FinalAudit.Znote_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FinalAudit.Hnote_eq' depends on axioms: [propext, Classical.choice, Quot.sound]

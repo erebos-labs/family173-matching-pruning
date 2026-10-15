@@ -1,0 +1,3 @@
+import Family173.SharpFamily
+open OAI.SeymourSecondNeighborhood Bipartite Pruning Family173
+example : matchingNumber (AugmentedEdge (Sharp.edge 0) (Sharp.R 0) (Sharp.C 0)) = 2 := Sharp.Gamma_number 0

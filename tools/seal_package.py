@@ -25,7 +25,7 @@ for p in ROOT.rglob('*'):
 paths.sort(key=lambda p:p.relative_to(ROOT).as_posix())
 records=[{'path':p.relative_to(ROOT).as_posix(),'bytes':p.stat().st_size,
           'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in paths]
-manifest={'schema':'family173.manifest.v1','public_version':'1.2.0','files':records}
+manifest={'schema':'family173.manifest.v1','public_version':'1.3.0','files':records}
 (ROOT/'MANIFEST.json').write_text(json.dumps(manifest,indent=2,sort_keys=True)+'\n')
 sums={x['path']:x['sha256'] for x in records}
 sums['MANIFEST.json']=hashlib.sha256((ROOT/'MANIFEST.json').read_bytes()).hexdigest()

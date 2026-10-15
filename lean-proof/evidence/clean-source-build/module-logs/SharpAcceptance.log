@@ -1,0 +1,42 @@
+theorem FinalPruningAudit.exact_arbitrary_size_family : ∀ (k : ℕ),
+  (Z (Sharp.edge k) (Sharp.R k) (Sharp.C k)).card = 1 ∧
+    (H (Sharp.edge k) (Sharp.R k) (Sharp.C k)).card = (k + 1) * (k + 1) ∧
+      matchingNumber (B0 (Sharp.edge k) (Sharp.R k) (H (Sharp.edge k) (Sharp.R k) (Sharp.C k))) = k + 1 ∧
+        matchingNumber (A0 (Sharp.edge k) (H (Sharp.edge k) (Sharp.R k) (Sharp.C k)) (Sharp.C k)) = k + 1 ∧
+          matchingNumber (AugmentedEdge (Sharp.edge k) (Sharp.R k) (Sharp.C k)) = k + 1 + 1 ∧
+            minimumPruningObjective (Sharp.edge k) (Sharp.R k) (Sharp.C k) = ↑(k + 1) ∧
+              IsOriented (Sharp.edge k) ∧ ∀ (x y z : Sharp.X k), Sharp.edge k x y → ¬Sharp.edge k y z :=
+fun k =>
+  ⟨Sharp.Z_card k,
+    ⟨Sharp.H_card k,
+      ⟨Sharp.B_number k,
+        ⟨Sharp.A_number k, ⟨Sharp.Gamma_number k, ⟨sharp_minimum_value k, ⟨Sharp.oriented k, Sharp.no_two_step k⟩⟩⟩⟩⟩⟩⟩
+theorem FinalPruningAudit.exact_real_coefficient_one_sharpness : ∀ (c K : ℝ),
+  c < 1 →
+    ∃ k,
+      ∀ (R' C' : Finset (Sharp.X k × Sharp.X k)),
+        AdmissibleNote (Sharp.edge k) (Sharp.R k) (Sharp.C k) R' C' →
+          ↑((Sharp.R k \ R').card + (Sharp.C k \ C').card) >
+            c *
+                  ↑(min (matchingNumber (B0 (Sharp.edge k) (Sharp.R k) (H (Sharp.edge k) (Sharp.R k) (Sharp.C k))))
+                      (matchingNumber (A0 (Sharp.edge k) (H (Sharp.edge k) (Sharp.R k) (Sharp.C k)) (Sharp.C k)))) +
+                ↑(qNote (Sharp.edge k) (Sharp.R k) (Sharp.C k) R' C').card +
+              K :=
+fun c K hc =>
+  Exists.casesOn (coefficient_one_sharp c K hc) fun k h =>
+    Exists.intro k fun R' C' hAd =>
+      have hBad := h R' C' ((admissible_exact (Sharp.edge k) (Sharp.R k) (Sharp.C k) R' C').mp hAd);
+      Eq.mpr
+        (id
+          (congrArg
+            (fun _a =>
+              ↑((Sharp.R k \ R').card + (Sharp.C k \ C').card) >
+                c *
+                      ↑(min (matchingNumber (B0 (Sharp.edge k) (Sharp.R k) (H (Sharp.edge k) (Sharp.R k) (Sharp.C k))))
+                          (matchingNumber (A0 (Sharp.edge k) (H (Sharp.edge k) (Sharp.R k) (Sharp.C k)) (Sharp.C k)))) +
+                    ↑_a.card +
+                  K)
+            (qNote_exact (Sharp.edge k) (Sharp.R k) (Sharp.C k) R' C')))
+        hBad
+'FinalPruningAudit.exact_arbitrary_size_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FinalPruningAudit.exact_real_coefficient_one_sharpness' depends on axioms: [propext, Classical.choice, Quot.sound]

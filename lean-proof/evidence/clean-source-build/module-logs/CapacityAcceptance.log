@@ -1,0 +1,29 @@
+theorem exact_published_matching_capacity.{u_1} : ∀ {X : Type u_1} [inst : Fintype X] [inst_1 : DecidableEq X]
+  (r : X → X → Prop) (R C : Finset (X × X)),
+  (Family173.matchingNumber fun a b =>
+      match a, b with
+      | Sum.inl w, Sum.inl c => r (↑w).1 (↑c).1 ∧ r (↑c).2 (↑w).2
+      | Sum.inl w, Sum.inr z => (↑w).2 = (↑z).2 ∧ r (↑w).1 (↑z).1
+      | Sum.inr z, Sum.inl c => (↑c).1 = (↑z).1 ∧ r (↑c).2 (↑z).2
+      | Sum.inr val, Sum.inr val_1 => False) ≤
+    (FinalAudit.Znote r R C).card +
+      min (Family173.matchingNumber fun w h => (↑w).1 = (↑h).1 ∧ r (↑h).2 (↑w).2)
+        (Family173.matchingNumber fun h c => (↑h).2 = (↑c).2 ∧ r (↑h).1 (↑c).1) :=
+fun {X} [Fintype X] [DecidableEq X] r R C => Family173.matching_capacity r R C
+theorem exact_generalized_residual.{u_1} : ∀ {X : Type u_1} [inst : Fintype X] [inst_1 : DecidableEq X]
+  (r : X → X → Prop) (R C W : Finset (X × X)),
+  W ⊆ R →
+    ∀ (α : Finset (↥W × ↥(FinalAudit.Znote r R C))),
+      IsMatching (fun w z => (↑w).2 = (↑z).2 ∧ r (↑w).1 (↑z).1) α →
+        leftVertices α = Finset.univ →
+          ↑(Family173.matchingNumber fun w h => (↑w).1 = (↑h).1 ∧ r (↑h).2 (↑w).2) ≥
+            ↑W.card + ↑(Family173.matchingNumber fun z c => (↑c).1 = (↑z).1 ∧ r (↑c).2 (↑z).2) -
+              ↑(FinalAudit.Znote r R C).card :=
+fun {X} [Fintype X] [DecidableEq X] r R C W hW α hα hSat =>
+  have h := Family173.generalized_residual_bound r R C W hW α hα hSat;
+  have arithmetic := fun n w z b a =>
+    Decidable.byContradiction fun a_1 => exact_generalized_residual._proof_1_1 r R C W n w z b a a_1;
+  arithmetic (Family173.matchingNumber fun z c => (↑c).1 = (↑z).1 ∧ r (↑c).2 (↑z).2) W.card
+    (FinalAudit.Znote r R C).card (Family173.matchingNumber fun w h => (↑w).1 = (↑h).1 ∧ r (↑h).2 (↑w).2) h
+'exact_published_matching_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'exact_generalized_residual' depends on axioms: [propext, Classical.choice, Quot.sound]

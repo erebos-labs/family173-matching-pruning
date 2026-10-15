@@ -1,3 +1,8 @@
+> v1.3.0 adds a scoped Lean formalization in [lean-proof/](lean-proof/README.md).
+> Earlier “no Lean” statements below describe historical editions. The named
+> finite-X theorem has clean build and independent AI mapping-review evidence;
+> whole-manuscript, novelty and human peer-review claims remain excluded.
+
 # Scope and limitations
 
 The theorem is exactly the arbitrary-relation statement in MATHEMATICAL_NOTE.md.

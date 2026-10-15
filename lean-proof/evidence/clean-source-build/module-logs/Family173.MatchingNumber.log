@@ -1,0 +1,12 @@
+Family173/MatchingNumber.lean:116:0: warning: automatically included section variable(s) unused in theorem `Family173.nu_remove_isolated_left`:
+  [DecidableEq X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Family173/MatchingNumber.lean:130:0: warning: automatically included section variable(s) unused in theorem `Family173.nu_remove_isolated_right`:
+  [DecidableEq X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`

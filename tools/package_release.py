@@ -3,7 +3,7 @@
 import argparse,hashlib,json,subprocess,sys,zipfile
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-VERSION='1.2.0'
+VERSION='1.3.0'
 NAME='family173-matching-pruning-v'+VERSION
 ap=argparse.ArgumentParser(description=__doc__)
 ap.add_argument('--output',type=Path,required=True)
@@ -18,7 +18,7 @@ records=json.loads((ROOT/'MANIFEST.json').read_text())['files']
 names=[r['path'] for r in records]+['MANIFEST.json','SHA256SUMS']
 with zipfile.ZipFile(targets[0],'w',zipfile.ZIP_DEFLATED,compresslevel=9) as z:
     for name in sorted(names):
-        info=zipfile.ZipInfo(NAME+'/'+name,(2026,10,14,0,0,0))
+        info=zipfile.ZipInfo(NAME+'/'+name,(2026,10,15,0,0,0))
         info.compress_type=zipfile.ZIP_DEFLATED
         info.external_attr=0o100644<<16
         z.writestr(info,(ROOT/name).read_bytes(),compress_type=zipfile.ZIP_DEFLATED,compresslevel=9)
@@ -34,10 +34,12 @@ provenance={'schema':'family173.release-provenance.v1','version':VERSION,
   'input_archive_sha256':'b2434d3008af12f7c7f4b0e495b8439cf25f36461987773752e6d79fc7118b83',
   'partial_input_archive_sha256':'62f2fb43b68e8076b9b491db03c0c7c1db84a8b98c1c296fa6ea2e079cbf9b3b',
   'residual_input_archive_sha256':'3812f68f1330b0a1e5d08ea325df2b75107c9f09dc5acf98c2dff0853170e4de',
-  'publication_status':'public edition prepared for approved v1.2.0 publication',
+  'publication_status':'approved scoped v1.3.0 Lean proof release',
   'baseline_commit':'0e54afc279700434df4a01b61ca97cfaf19af53b',
   'upstream_commit':'1581d4cbdd69a0faf34b2089614fe2a814316a6a',
-  'scope':'Previously established capacity corollary plus a constructive rank-free residual-cover proof completing the combinatorial accounting; historical partial addendum preserved; novelty unestablished; no Lean or full Seymour endorsement.'}
+  'proof_archive_sha256':'3887ead9fe316e3c5fda1dd547db092bb5664cfd4243d10149bccabc76fd9257',
+  'review_packet_sha256':'999f4169528f365f7b8f51e72eaa0291b8ea4309c3e74d4955dd185f0f9c6ba9',
+  'scope':'Primary finite-X capacity, signed actual pruning minimum/attainment and beta budget, unbounded real-coefficient sharpness; independent AI mapping review and clean pinned Lean source build; no novelty or wider Seymour conjecture proof.'}
 targets[2].write_text(json.dumps(provenance,indent=2,sort_keys=True)+'\n')
 sums={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in (targets[0],targets[2])}
 targets[1].write_text(''.join(sums[n]+'  '+n+'\n' for n in sorted(sums)))

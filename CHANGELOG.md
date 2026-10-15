@@ -1,5 +1,14 @@
 # Changes
 
+## v1.3.0 — 15 October 2026
+
+Add the scoped primary finite-X Lean theorem: capacity, signed actual pruning
+minimum and admissible attainment/budget, and all-real coefficient-one sharpness.
+Preserve36 frozen proof/audit source bytes, source pins/upstream notices and all
+earlier releases. Add portable source-only reproduction, complete clean build
+evidence and independent AI statement-mapping PASS. No novelty, full Seymour
+proof, Python-equivalence or human referee claim. Hosted CI remains Python-only.
+
 ## v1.2.0 — 14 October 2026
 
 Add the independently audited constructive residual-cover proof completing the

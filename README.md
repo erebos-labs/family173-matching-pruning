@@ -1,6 +1,6 @@
 # Family 173: matching-capacity pruning
 
-Erebos Labs. Capacity corollary **v1.0.1**, with historical partial addendum **v1.1.0** and complete rank-free addendum **v1.2.0**.
+Erebos Labs. Capacity corollary **v1.0.1**, with historical partial addendum **v1.1.0** complete rank-free addendum **v1.2.0**, and scoped Lean proof package **v1.3.0**.
 
 For the exact conflict and coverage definitions in [the note](MATHEMATICAL_NOTE.md),
 let Z,H be the original corner sets, Gamma the augmented bipartite graph, and
@@ -15,7 +15,8 @@ The coefficient 1 is sharp, and the improvement over the |H| budget is unbounded
 
 This is a **short structural corollary of OpenAI's pinned rank argument**.
 The substantive generic-rank and kernel-lift construction is inherited.
-Novelty and priority are unestablished. No Lean verification, human referee
+Novelty and priority are unestablished. The primary finite-X theorem now has
+a scoped Lean proof in [lean-proof/](lean-proof/README.md). No human referee
 review or endorsement of the full Seymour conjecture proof is claimed.
 Preparation, implementation and agent review were AI-assisted.
 
@@ -75,7 +76,9 @@ cases and deliberate invalid certificates/inputs. The independent oracle adds
 the bounded checks on Linux and macOS. CI outcomes are available on GitHub.
 
 The finite checks support the software; they do not prove the general theorem.
-See [LIMITATIONS.md](LIMITATIONS.md). This repository contains no Lean theorem.
+See [LIMITATIONS.md](LIMITATIONS.md). Lean verification is limited to the
+exact named statements in [lean-proof/](lean-proof/README.md); Python equivalence
+and the entire manuscript are outside that scope.
 
 ## Attribution, licensing and releases
 
@@ -138,3 +141,19 @@ Diagnostic checks stay active under optimization; original corner geometry,
 strict certificate parsing and exact manifest inventory are verified.
 This additive edition preserves the preceding releases. The v1.2.0 release
 contains the selected package, checksum list and committed-source provenance.
+
+## Scoped Lean proof package — v1.3.0
+
+[lean-proof/](lean-proof/README.md) supplies the independently AI-reviewed
+prose-to-formal mapping and kernel-checked finite-X capacity bound, actual signed
+pruning minimum/attainment, beta budget and unbounded coefficient-one sharpness.
+It preserves36 frozen proof/audit sources and all earlier releases. Fresh clean
+source builds cover999 external+36 local modules, with only standard logical
+axioms in the audited declarations. A portable source-only rebuild retains all
+commands/logs/hashes. The compiler distribution remains trusted.
+
+Run `python3 -B lean-proof/reproduce.py --fetch --output /tmp/family173-lean-clean-1`
+with the pinned Lean4.34.1 compiler available, following its README. The existing
+CI workflow runs Python/integrity checks; it does not run Lean. This is a
+formalization of this specific structural corollary, not a novelty claim or a
+proof of the wider conjecture.

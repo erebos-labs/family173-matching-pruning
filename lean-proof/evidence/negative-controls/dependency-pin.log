@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "earlier-clean-run/acceptance-20261015T100713Z/negative-controls/pin-probe/project/scripts/verify", line 104, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "earlier-clean-run/acceptance-20261015T100713Z/negative-controls/pin-probe/project/scripts/verify", line 35, in main
+    require(actual==expected_pin,'dependency pin changed: '+rel)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "earlier-clean-run/acceptance-20261015T100713Z/negative-controls/pin-probe/project/scripts/verify", line 14, in require
+    if not ok:raise RuntimeError(msg)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: dependency pin changed: .lake/packages/plausible
